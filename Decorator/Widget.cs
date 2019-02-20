@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    interface Widget
+    interface IWidget
     {
         public void Draw()
         {
-            
+            Console.WriteLine("draws a widget");
         }
     }
 }

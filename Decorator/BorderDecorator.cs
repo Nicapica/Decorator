@@ -8,16 +8,16 @@ namespace Decorator
 {
     class BorderDecorator : Decorator
     {
-        Widget widget;
+        IWidget widget;
 
-        public BorderDecorator(Widget w)
+        public BorderDecorator(IWidget w)
         {
             this.widget = w;
         }
 
         public void Draw()
         {
-            Console.WriteLine("I am a border decorator holding a:");
+            Console.WriteLine("I am a border decorator");
         }
     }
 }

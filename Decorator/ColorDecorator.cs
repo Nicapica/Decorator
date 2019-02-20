@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    class TextField : IWidget
+    class ColorDecorator : Decorator
     {
-        private int width;
-        private int height;
+        IWidget widget;
 
-        public TextField(int w, int h)
+        public ColorDecorator(IWidget w)
         {
-
+            this.widget = w;
         }
 
         public void Draw()
         {
-            Console.WriteLine("draws a textfield");
+            Console.WriteLine("I am a color decorator");
         }
     }
 }

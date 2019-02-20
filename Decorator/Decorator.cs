@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    abstract class Decorator : Widget
+    abstract class Decorator : IWidget
     {
-        private Widget wid; 
+        private IWidget wid; 
 
-        public Decorator(Widget w)
+        public Decorator(IWidget w)
         {
 
         }

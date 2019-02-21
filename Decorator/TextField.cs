@@ -13,7 +13,8 @@ namespace Decorator
 
         public TextField(int w, int h)
         {
-
+            w = 20;
+            h = 10;
         }
 
         public void Draw()

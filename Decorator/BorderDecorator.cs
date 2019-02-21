@@ -15,7 +15,7 @@ namespace Decorator
             this.wid = w;
         }
 
-        public void Draw()
+        public new void Draw()
         {
             Console.WriteLine("Border Decorator");
         }

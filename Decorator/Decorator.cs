@@ -8,7 +8,7 @@ namespace Decorator
 {
     abstract class Decorator : IWidget
     {
-        private IWidget wid; 
+        private IWidget wid;
 
         public Decorator(IWidget w)
         {

@@ -16,7 +16,7 @@ namespace Decorator
             BorderDecorator bd = new BorderDecorator(tf);
             ScrollDecorator sd = new ScrollDecorator(bd);
             ColorDecorator cd = new ColorDecorator(sd);
-            cd.Draw();
+            bd.Draw();
             Console.ReadKey();
         }
     }

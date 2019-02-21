@@ -10,11 +10,9 @@ namespace Decorator
 {
     class ColorDecorator : Decorator
     {
-        private IWidget wid;
-
         public ColorDecorator(IWidget w) : base(w)
         {
-            this.wid = w;
+            Draw();
         }
 
         public new void Draw()

@@ -10,11 +10,10 @@ namespace Decorator
 {
     class ScrollDecorator : Decorator
     {
-        private IWidget wid;
 
         public ScrollDecorator(IWidget w) : base(w)
         {
-            this.wid = w;
+            Draw();
         }
 
         public new void Draw()

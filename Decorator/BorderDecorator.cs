@@ -10,11 +10,10 @@ namespace Decorator
 {
     class BorderDecorator : Decorator
     {
-        private IWidget wid;
-
         public BorderDecorator(IWidget w):base(w)
         {
-            this.wid = w;
+            base.Draw();
+            Draw();
         }
 
         public new void Draw()

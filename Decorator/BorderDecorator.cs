@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Author: Nicholas Pica
+// File: BorderDecorator.cs
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,7 @@ namespace Decorator
     {
         private IWidget wid;
 
-        public BorderDecorator(IWidget w)
+        public BorderDecorator(IWidget w):base(w)
         {
             this.wid = w;
         }

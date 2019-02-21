@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Author: Nicholas Pica
+// File: Program.cs
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +12,12 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
-            IWidget w1 = new BorderDecorator(new TextField);
-            w1.Draw();
-            IWidget w2 = new ScrollDecorator(new TextField);
-            w2.Draw();
-            IWidget w3 = new ColorDecorator(new TextField);
-            w3.Draw();
+            TextField tf = new TextField(3, 2);
+            BorderDecorator bd = new BorderDecorator(tf);
+            ScrollDecorator sd = new ScrollDecorator(bd);
+            ColorDecorator cd = new ColorDecorator(sd);
+            cd.Draw();
+            Console.ReadKey();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Author: Nicholas Pica
+// File: ScrollDecorator.cs
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,7 @@ namespace Decorator
     {
         private IWidget wid;
 
-        public ScrollDecorator(IWidget w)
+        public ScrollDecorator(IWidget w) : base(w)
         {
             this.wid = w;
         }

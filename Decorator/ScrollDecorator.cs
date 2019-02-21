@@ -17,7 +17,7 @@ namespace Decorator
 
         public void Draw()
         {
-            Console.WriteLine("I am a scroll decorator");
+            Console.WriteLine("Scroll Decorator");
         }
     }
 }

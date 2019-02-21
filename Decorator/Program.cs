@@ -10,6 +10,12 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
+            IWidget w1 = new BorderDecorator(new TextField);
+            w1.Draw();
+            IWidget w2 = new ScrollDecorator(new TextField);
+            w2.Draw();
+            IWidget w3 = new ColorDecorator(new TextField);
+            w3.Draw();
         }
     }
 }

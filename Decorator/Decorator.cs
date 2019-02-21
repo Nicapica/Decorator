@@ -17,7 +17,7 @@ namespace Decorator
 
         public void Draw()
         {
-
+            Console.WriteLine("This is a decorator holding a: ");
         }
     }
 }

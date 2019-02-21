@@ -8,11 +8,11 @@ namespace Decorator
 {
     class BorderDecorator : Decorator
     {
-        IWidget widget;
+        private IWidget wid;
 
         public BorderDecorator(IWidget w)
         {
-            this.widget = w;
+            this.wid = w;
         }
 
         public void Draw()

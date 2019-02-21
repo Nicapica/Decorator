@@ -8,11 +8,11 @@ namespace Decorator
 {
     class ScrollDecorator : Decorator
     {
-        IWidget widget;
+        private IWidget wid;
 
         public ScrollDecorator(IWidget w)
         {
-            this.widget = w;
+            this.wid = w;
         }
 
         public void Draw()

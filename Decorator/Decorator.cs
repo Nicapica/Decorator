@@ -12,7 +12,7 @@ namespace Decorator
 
         public Decorator(IWidget w)
         {
-
+            this.wid = w;
         }
 
         public void Draw()

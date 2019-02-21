@@ -8,9 +8,6 @@ namespace Decorator
 {
     interface IWidget
     {
-        public void Draw()
-        {
-            Console.WriteLine("draws a widget");
-        }
+        void Draw();
     }
 }
